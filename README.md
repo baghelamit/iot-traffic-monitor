@@ -2,7 +2,7 @@
 
 Below is the architecture diagram for IoT Traffic Monitor application.
 
-iot-traffic-monitor/iot-architecture.png
+https://github.com/baghelamit/iot-traffic-monitor/blob/master/iot-architecture.png
 
 IoT Traffic Monitor is a Maven Aggregator project. It includes following three projects.
 
