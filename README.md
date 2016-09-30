@@ -1,6 +1,6 @@
 # IoT Traffic Monitor
 
-Below is the architecture diagram for IoT Traffic Monitor application.
+Below is the architecture diagram for IoT Traffic Monitor application. Read the article at [InfoQ](https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-streaming)
 
 ![IoT Traffic Monitor Architecture](https://github.com/baghelamit/iot-traffic-monitor/blob/master/iot-architecture.png)
 
