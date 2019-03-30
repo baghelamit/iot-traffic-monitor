@@ -50,6 +50,17 @@ nohup java -jar target/iot-kafka-producer-1.0.0.jar &
 cd  iot-spark-processor
 nohup java -jar target/iot-spark-processor-1.0.0.jar &
 ```
+3. Start the UI application.
+```sh
+cd iot-springboot-dashboard
+nohup ava -jar target/iot-springboot-dashboard-1.0.0.jar &
+```
+
+4. Now open the dashboard UI in a web browser. The application will refresh itself periodically.
+```sh
+http://localhost:8080
+```
+
 
 
 
