@@ -11,6 +11,8 @@ import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
 import org.springframework.data.cassandra.mapping.CassandraMappingContext;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
+import org.apache.log4j.Logger;
+
 /**
  * Spring bean configuration for Cassandra db.
  * 
@@ -20,16 +22,26 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 @Configuration
 @PropertySource(value = {"classpath:iot-springboot.properties"})
 @EnableCassandraRepositories(basePackages = {"com.iot.app.springboot.dao"})
-public class CassandraConfig extends AbstractCassandraConfiguration{
-	
+public class CassandraConfig extends AbstractCassandraConfiguration {
+    private static final Logger logger = Logger.getLogger(CassandraConfig.class);
+
     @Autowired
     private Environment environment;
     
     @Bean
     public CassandraClusterFactoryBean cluster() {
         CassandraClusterFactoryBean cluster = new CassandraClusterFactoryBean();
-        cluster.setContactPoints(environment.getProperty("com.iot.app.cassandra.host"));
-        cluster.setPort(Integer.parseInt(environment.getProperty("com.iot.app.cassandra.port")));
+	String cassandraHost = environment.getProperty("com.iot.app.cassandra.host");
+        if (System.getProperty("com.iot.app.cassandra.host") != null) {
+            cassandraHost = System.getProperty("com.iot.app.cassandra.host");
+        }
+        String cassandraPort = environment.getProperty("com.iot.app.cassandra.port");
+        if (System.getProperty("com.iot.app.cassandra.port") != null) {
+            cassandraPort = System.getProperty("com.iot.app.cassandra.port");
+        }
+	logger.info("Using cassandra host=" + cassandraHost + " port=" + cassandraPort);
+        cluster.setContactPoints(cassandraHost);
+        cluster.setPort(Integer.parseInt(cassandraPort));
         return cluster;
     }
   

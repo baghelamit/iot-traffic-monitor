@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/iot-kafka-producer/iot-kafka-producer.iml" filepath="$PROJECT_DIR$/iot-kafka-producer/iot-kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iot-spark-processor/iot-spark-processor.iml" filepath="$PROJECT_DIR$/iot-spark-processor/iot-spark-processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iot-springboot-dashboard/iot-springboot-dashboard.iml" filepath="$PROJECT_DIR$/iot-springboot-dashboard/iot-springboot-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iot-traffic-monitor.iml" filepath="$PROJECT_DIR$/iot-traffic-monitor.iml" />
+    </modules>
+  </component>
+</project>
