@@ -30,8 +30,26 @@ For building these projects it requires following tools. Please refer README.md 
 - JDK - 1.8
 - Maven - 3.3.9
 
-Use below command to build all projects.
 
+# Setup Application
+
+1. git https://github.com/jatin7/iot-traffic-monitor.git
+2. Build the required binaries.
 ```sh
+cd iot-traffic-monitor
 mvn package
 ```
+# Running the application
+1. Start the data producer.
+```sh
+cd iot-kafka-producer
+nohup java -jar target/iot-kafka-producer-1.0.0.jar &
+```
+2. Start Spark the data processing application 
+```sh
+cd  iot-spark-processor
+nohup java -jar target/iot-spark-processor-1.0.0.jar &
+```
+
+
+
