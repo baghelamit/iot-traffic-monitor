@@ -39,6 +39,45 @@ For building these projects it requires following tools. Please refer README.md 
 cd iot-traffic-monitor
 mvn package
 ```
+3. Create DataStax/Cassandra Tables
+
+   Create the keyspaces and tables by running the following command. 
+```sh
+cqlsh -f resources/IoTData.cql
+```
+
+4. Do the following to run Kafka and related components:
+```sh
+wget https://www.dropbox.com/s/3mi7t71cfgup3g2/confluent-5.1.2-2.11.tar.gz?dl=0
+mv confluent-5.1.2-2.11.tar.gz?dl=0 confluent-5.1.2-2.11.tar.gz
+tar xvzf confluent-5.1.2-2.11.tar.gz
+
+vi ~/.bashrc 
+export PATH=$PATH:~/apps/confluent-5.1.2/bin
+
+source ~/.bashrc
+
+confluent start ksql-server
+confluent status
+```
+The output for the confluent status should look like
+```sh
+control-center is [DOWN]
+ksql-server is [UP]
+connect is [DOWN]
+kafka-rest is [DOWN]
+schema-registry is [UP]
+kafka is [UP]
+zookeeper is [UP]
+```
+Note: It is required that the DOWN components in this list are not actually enabled.
+
+
+5. Create the origin Kafka topic
+```sh
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic iot-data-event
+```
+
 # Running the application
 1. Start the data producer.
 ```sh

@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5da8868b-9a66-41fa-8704-23dfe5c44e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/.helmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/.helmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/NOTES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/_helpers.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -25,7 +16,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="87">
+                <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -49,10 +53,10 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" />
         <option value="$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/kubernetes/helm/README.md" />
         <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml" />
         <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -84,24 +88,6 @@
               <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="helm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="helm" type="462c0819:PsiDirectoryNode" />
-              <item name="datastax-iot-helm" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -109,7 +95,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553995687182" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553997072753" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -147,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553994344093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added support for Docker and Kubernetes">
+      <created>1553995700386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553995700386</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -185,7 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Renamed hostname to datastax-iot from localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed hostname to datastax-iot from localhost" />
+    <MESSAGE value="Added support for Docker and Kubernetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support for Docker and Kubernetes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/IoTData.cql" />
@@ -237,16 +231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iot-spark-processor/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -290,6 +274,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="87">
+            <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
