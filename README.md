@@ -43,12 +43,12 @@ mvn package
 
    Create the keyspaces and tables by running the following command. 
 ```sh
-cqlsh -f resources/IoTData.cql
+cqlsh datastax-iot 9042 -f resources/IoTData.cql
 ```
 
 4. Do the following to run Kafka and related components:
 ```sh
-wget https://www.dropbox.com/s/3mi7t71cfgup3g2/confluent-5.1.2-2.11.tar.gz?dl=0
+Download confluent-5.1.2-2.11.tar.gz from Confluent Website 
 mv confluent-5.1.2-2.11.tar.gz?dl=0 confluent-5.1.2-2.11.tar.gz
 tar xvzf confluent-5.1.2-2.11.tar.gz
 

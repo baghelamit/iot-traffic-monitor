@@ -4,6 +4,7 @@
     <list default="true" id="5da8868b-9a66-41fa-8704-23dfe5c44e25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/CassandraConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/CassandraConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/iot-kafka-producer/target/" />
     <ignored path="$PROJECT_DIR$/iot-spark-processor/target/" />
@@ -17,14 +18,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="87">
-                <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+              <first_editor relative-caret-position="400">
+                <caret line="94" column="28" selection-start-line="94" selection-end-line="95" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/CassandraConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="35" column="77" lean-forward="true" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/POITrafficDataRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/entity/POITrafficData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/entity/TotalTrafficData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/WindowTrafficDataRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -36,12 +100,14 @@
       <find>yugabyte</find>
       <find>YCQL</find>
       <find>yb-</find>
+      <find>schema_keyspaces</find>
+      <find>getKeyspaceName</find>
     </findStrings>
     <replaceStrings>
       <replace>jatin7</replace>
       <replace>CQL</replace>
-      <replace>datastax</replace>
       <replace>datastax-</replace>
+      <replace>datastax</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -51,12 +117,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" />
         <option value="$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties" />
         <option value="$PROJECT_DIR$/kubernetes/helm/README.md" />
         <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml" />
         <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" />
+        <option value="$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/CassandraConfig.java" />
       </list>
     </option>
   </component>
@@ -95,7 +162,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553997072753" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553999585652" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -140,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553995700386</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated ReadMe">
+      <created>1553997094714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553997094714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -179,7 +253,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Renamed hostname to datastax-iot from localhost" />
     <MESSAGE value="Added support for Docker and Kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for Docker and Kubernetes" />
+    <MESSAGE value="Updated ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ReadMe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/IoTData.cql" />
@@ -207,20 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/TotalTrafficDataRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/POITrafficDataRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -236,20 +297,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -277,13 +324,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="87">
-            <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <first_editor relative-caret-position="400">
+            <caret line="94" column="28" selection-start-line="94" selection-end-line="95" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/TotalTrafficDataRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/WindowTrafficDataRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/POITrafficDataRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/entity/POITrafficData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/entity/TotalTrafficData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/java/com/iot/app/springboot/dao/CassandraConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="35" column="77" lean-forward="true" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
         </state>
       </provider>
     </entry>
