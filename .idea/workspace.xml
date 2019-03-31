@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5da8868b-9a66-41fa-8704-23dfe5c44e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iot-fleet-management-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties" beforeDir="false" afterPath="$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/IoTData.cql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" beforeDir="false" afterPath="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/iot-kafka-producer/target/" />
     <ignored path="$PROJECT_DIR$/iot-spark-processor/target/" />
@@ -20,26 +25,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>yugabyte</find>
+      <find>YCQL</find>
+      <find>yb-</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>jatin7</replace>
+      <replace>CQL</replace>
+      <replace>datastax</replace>
+      <replace>datastax-</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,6 +49,10 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties" />
         <option value="$PROJECT_DIR$/iot-spark-processor/src/main/resources/iot-spark.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/kubernetes/helm/README.md" />
+        <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml" />
+        <option value="$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml" />
       </list>
     </option>
   </component>
@@ -84,80 +87,20 @@
             <path>
               <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-spark-processor" type="462c0819:PsiDirectoryNode" />
+              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-spark-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="helm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-spark-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-spark-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="helm" type="462c0819:PsiDirectoryNode" />
+              <item name="datastax-iot-helm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,7 +109,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553994298344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553995687182" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -197,13 +140,20 @@
       <option name="presentableId" value="Default" />
       <updated>1553959189942</updated>
     </task>
+    <task id="LOCAL-00001" summary="Renamed hostname to datastax-iot from localhost">
+      <created>1553994344093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553994344093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="280" y="36" width="1400" height="917" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18851252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -221,7 +171,7 @@
       <window_info anchor="bottom" id="Graph Database Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32969698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -232,6 +182,10 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Renamed hostname to datastax-iot from localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed hostname to datastax-iot from localhost" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/IoTData.cql" />
@@ -283,10 +237,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="39" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="184">
+            <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-spark-processor/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -294,6 +259,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/src/main/resources/iot-springboot.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/helm/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="325">
+            <caret line="210" column="66" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/Chart.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/helm/datastax-iot-helm/values.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>

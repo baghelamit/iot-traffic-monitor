@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "yb-iot-helm.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "yb-iot-helm.name" . }}
+    helm.sh/chart: {{ include "yb-iot-helm.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "yb-iot-helm.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "yb-iot-helm.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          command:
+          - java
+          - -Dcom.iot.app.kafka.brokerlist={{ .Values.kafkaHostPort }}
+          - -Dcom.iot.app.kafka.zookeeper={{ .Values.zookeeperHostPort }}
+          - -jar
+          - /home/yugabyte-iot/iot-kafka-producer.jar
+        - name: {{ .Chart.Name }}-ui
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          command:
+          - java
+          - -Dcom.iot.app.cassandra.host={{ .Values.yugabyteDBHost }}
+          - -Dcom.iot.app.cassandra.port={{ .Values.yugabyteDBYCQLPort }}
+          - -jar
+          - /home/yugabyte-iot/iot-springboot-dashboard.jar

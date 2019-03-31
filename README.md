@@ -8,9 +8,9 @@ Traffic Monitor application uses following tools and technologies.
 
 - JDK - 1.8
 - Maven - 3.3.9
-- ZooKeeper - 3.4.8
-- Kafka - 2.10-0.10.0.0
-- Cassandra - 2.2.6
+- ZooKeeper - 3.4.13
+- Kafka - 2.1.1
+- Cassandra - 3.0.0
 - Spark - 1.6.2 Pre-built for Hadoop 2.6
 - Spring Boot - 1.3.5
 - jQuery.js
