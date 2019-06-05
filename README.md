@@ -93,8 +93,7 @@ dse spark-submit --packages org.apache.spark:spark-streaming-kafka_2.11:1.6.3 --
 3. Start the UI application.
 ```sh
 cd iot-springboot-dashboard
-nohup ava -jar target/iot-springboot-dashboard-1.0.0.jar &
-```
+nohup java -jar target/iot-springboot-dashboard-1.0.0.jar &```
 
 4. Now open the dashboard UI in a web browser. The application will refresh itself periodically.
 ```sh
