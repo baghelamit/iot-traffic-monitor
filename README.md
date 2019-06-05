@@ -87,7 +87,7 @@ nohup java -jar target/iot-kafka-producer-1.0.0.jar &
 2. Start Spark the data processing application 
 ```sh
 cd  iot-spark-processor
-dse spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.1 --class "com.iot.app.spark.processor.IoTDataProcessor” iot-spark-processor-1.0.0.jar
+dse spark-submit --packages org.apache.spark:spark-streaming-kafka_2.11:1.6.3 --class "com.iot.app.spark.processor.IoTDataProcessor" target/iot-spark-processor-1.0.0.jar
 #nohup java -jar target/iot-spark-processor-1.0.0.jar &
 ```
 3. Start the UI application.

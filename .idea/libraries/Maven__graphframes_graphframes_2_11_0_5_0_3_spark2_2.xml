@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: graphframes:graphframes_2.11:0.5.0.3-spark2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/graphframes/graphframes_2.11/0.5.0.3-spark2.2/graphframes_2.11-0.5.0.3-spark2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/graphframes/graphframes_2.11/0.5.0.3-spark2.2/graphframes_2.11-0.5.0.3-spark2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/graphframes/graphframes_2.11/0.5.0.3-spark2.2/graphframes_2.11-0.5.0.3-spark2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

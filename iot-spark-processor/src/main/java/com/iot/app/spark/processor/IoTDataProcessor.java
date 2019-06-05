@@ -20,11 +20,13 @@ import org.apache.spark.streaming.api.java.JavaPairInputDStream;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.apache.spark.streaming.kafka.KafkaUtils;
 
-import com.google.common.base.Optional;
+//import com.google.common.base.Optional;
+import org.apache.spark.api.java.Optional;
 import com.iot.app.spark.util.IoTDataDecoder;
 import com.iot.app.spark.util.PropertyFileReader;
 import com.iot.app.spark.vo.IoTData;
 import com.iot.app.spark.vo.POIData;
+import com.datastax.spark.connector.streaming.*;
 
 import kafka.serializer.StringDecoder;
 import scala.Tuple2;

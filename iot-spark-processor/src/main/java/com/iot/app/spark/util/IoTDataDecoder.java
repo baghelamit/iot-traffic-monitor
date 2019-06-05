@@ -6,6 +6,7 @@ import com.iot.app.spark.vo.IoTData;
 import kafka.serializer.Decoder;
 import kafka.utils.VerifiableProperties;
 
+
 /**
  * Class to deserialize JSON string to IoTData java object
  * 
