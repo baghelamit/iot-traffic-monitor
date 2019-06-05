@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5da8868b-9a66-41fa-8704-23dfe5c44e25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/iot-springboot-dashboard.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/CassandraConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/POITrafficDataRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/TotalTrafficDataRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/WindowTrafficDataRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/entity/POITrafficData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/entity/TotalTrafficData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dao/entity/WindowTrafficData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dashboard/IoTDataDashboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dashboard/TrafficDataService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/dashboard/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/vo/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/com/iot/app/springboot/vo/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/iot-springboot.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/iot-springboot-dashboard/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iot-spark-processor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/iot-kafka-producer/target/" />
     <ignored path="$PROJECT_DIR$/iot-spark-processor/target/" />
@@ -94,6 +82,11 @@
               <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="iot-traffic-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-traffic-monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="iot-springboot-dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -104,7 +97,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553999585652" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/iot-spark-processor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559728957380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated Code to work on DSE 6.7.3">
+      <created>1559729274695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559729274695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -205,7 +205,8 @@
     <MESSAGE value="Added support for Docker and Kubernetes" />
     <MESSAGE value="Updated ReadMe" />
     <MESSAGE value="Updated Code to work on 6.7.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Code to work on 6.7.3" />
+    <MESSAGE value="Updated Code to work on DSE 6.7.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Code to work on DSE 6.7.3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iot-springboot-dashboard/IoTData.cql" />
