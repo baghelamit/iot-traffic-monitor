@@ -48,12 +48,12 @@ cqlsh datastax-iot 9042 -f resources/IoTData.cql
 
 4. Do the following to run Kafka and related components:
 ```sh
-Download confluent-5.1.2-2.11.tar.gz from Confluent Website 
-mv confluent-5.1.2-2.11.tar.gz?dl=0 confluent-5.1.2-2.11.tar.gz
-tar xvzf confluent-5.1.2-2.11.tar.gz
+Download confluent-5.2.1-2.12.tar.gz from Confluent Website 
+mv cconfluent-5.2.1-2.12.tar.gz?dl=0 confluent-5.2.1-2.12.tar.gz
+tar xvzf confluent-5.2.1-2.12.tar.gz
 
 vi ~/.bashrc 
-export PATH=$PATH:~/apps/confluent-5.1.2/bin
+export PATH=$PATH:~/apps/confluent-5.2.1/bin
 
 source ~/.bashrc
 
