@@ -8,7 +8,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<dse.version>6.7.3</dse.version>
+		<dse.version>6.7.5</dse.version>
 	</properties>
 
 	<repositories>
