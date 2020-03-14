@@ -7,10 +7,7 @@ sudo: false
 install: true
 jdk:
  - openjdk8
-env:
- - MAVEN_OPTS="-Xmx8g -Xms2g"
 cache:
   directories:
-   - .autoconf
    - $HOME/.m2/repository
-script: travis-wait-improved --timeout 20m mvn clean package -Dmaven.test.skip=true
+script: mvn clean package -Dmaven.test.skip=true
