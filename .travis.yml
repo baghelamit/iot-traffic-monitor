@@ -12,5 +12,5 @@ env:
 cache:
   directories:
    - .autoconf
-   - $HOME/.m2
+   - $HOME/.m2/repository
 script: travis-wait-improved --timeout 20m mvn clean package -Dmaven.test.skip=true
