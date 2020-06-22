@@ -64,6 +64,10 @@ public class IoTData implements Serializable{
 		return timestamp;
 	}
 
+	public void setTimestamp(Date ts) {
+		timestamp = ts;
+	}
+
 	public double getSpeed() {
 		return speed;
 	}

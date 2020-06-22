@@ -8,9 +8,9 @@ Traffic Monitor application uses following tools and technologies.
 
 - JDK - 1.8
 - Maven - 3.3.9
-- ZooKeeper - 3.4.8
-- Kafka - 2.10-0.10.0.0
-- Cassandra - 2.2.6
+- ZooKeeper - 3.4.13
+- Kafka - 2.1.1
+- Cassandra - 3.0.0
 - Spark - 1.6.2 Pre-built for Hadoop 2.6
 - Spring Boot - 1.3.5
 - jQuery.js
@@ -30,8 +30,76 @@ For building these projects it requires following tools. Please refer README.md 
 - JDK - 1.8
 - Maven - 3.3.9
 
-Use below command to build all projects.
 
+# Setup Application
+
+1. git https://github.com/jatin7/iot-traffic-monitor.git
+2. Build the required binaries.
 ```sh
+cd iot-traffic-monitor
 mvn package
 ```
+3. Create DataStax/Cassandra Tables
+
+   Create the keyspaces and tables by running the following command. 
+```sh
+cqlsh datastax-iot 9042 -f resources/IoTData.cql
+```
+
+4. Do the following to run Kafka and related components:
+```sh
+Download confluent-5.2.1-2.12.tar.gz from Confluent Website 
+mv cconfluent-5.2.1-2.12.tar.gz?dl=0 confluent-5.2.1-2.12.tar.gz
+tar xvzf confluent-5.2.1-2.12.tar.gz
+
+vi ~/.bashrc 
+export PATH=$PATH:~/apps/confluent-5.2.1/bin
+
+source ~/.bashrc
+
+confluent start ksql-server
+confluent status
+```
+The output for the confluent status should look like
+```sh
+control-center is [DOWN]
+ksql-server is [UP]
+connect is [DOWN]
+kafka-rest is [DOWN]
+schema-registry is [UP]
+kafka is [UP]
+zookeeper is [UP]
+```
+Note: It is required that the DOWN components in this list are not actually enabled.
+
+
+5. Create the origin Kafka topic
+```sh
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic iot-data-event
+```
+
+# Running the application
+1. Start the data producer.
+```sh
+cd iot-kafka-producer
+nohup java -jar target/iot-kafka-producer-1.0.0.jar &
+```
+2. Start Spark the data processing application 
+```sh
+cd  iot-spark-processor
+dse spark-submit --packages org.apache.spark:spark-streaming-kafka_2.11:1.6.3 --class "com.iot.app.spark.processor.IoTDataProcessor" target/iot-spark-processor-1.0.0.jar
+#nohup java -jar target/iot-spark-processor-1.0.0.jar &
+```
+3. Start the UI application.
+```sh
+cd iot-springboot-dashboard
+nohup java -jar target/iot-springboot-dashboard-1.0.0.jar &```
+
+4. Now open the dashboard UI in a web browser. The application will refresh itself periodically.
+```sh
+http://localhost:8080
+```
+
+
+ 
+

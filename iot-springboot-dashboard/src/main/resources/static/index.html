@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>IoT Traffic Data Monitoring Dashboard</title>
+    <title>DataStax IoT Fleet Management |  Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -10,17 +10,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">
-				IoT Traffic Data Monitoring Dashboard
-		</div>
+                <h1 class="main-title text-center">IoT Fleet Management - Dashboard</h1>
+	    </div>
 	</div>
 	<br>
-	<div class="row">
+	<div class="row main-container">
 		<div class="col-md-4">
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>Total Traffic Chart</th>
+						<th>Total Traffic - Vehicle Type and Route (Bar Chart)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,7 +31,7 @@
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>Total Traffic Data</th>
+						<th>Total Traffic - Vehicle Type and Route (Tabular)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -56,7 +55,7 @@
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>Route 37 Traffic Chart</th>
+						<th>Route 37 Traffic (Donut Chart)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -68,7 +67,7 @@
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>Last 30 Seconds Window</th>
+						<th>Last 30 Seconds Window (Tabular)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -92,7 +91,7 @@
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>POI Vehicle Chart</th>
+						<th>Vehicles At Road Closures (Radar Chart)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -104,7 +103,7 @@
 			<table class="table outerTable">
 				<thead>
 					<tr>
-						<th>Trucks At POI</th>
+						<th>Trucks At Road Closures (Tabular)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -240,7 +239,7 @@
 		
 		function drawBarChart(trafficDetail,trafficChartData){
 					//Prepare data for total traffic chart
-					var chartLabel = [ "Bus","Large Truck",  "Private Car","Small Truck", "Taxi"];
+					var chartLabel = [ "18 Wheeler","Large Truck", "Small Truck", "Van", "Car"];
 					var routeName = ["Route-37", "Route-82", "Route-43"];
 					var chartData0 =[0,0,0,0,0], chartData1 =[0,0,0,0,0], chartData2 =[0,0,0,0,0];
 					
@@ -261,20 +260,20 @@
 				        labels : chartLabel,
 				        datasets : [{
 				        	label				  : routeName[0],
-				            borderColor           : "#878BB6",
-				            backgroundColor       : "#878BB6",
+				            borderColor           : "#f75821",
+				            backgroundColor       : "#f75821",
 				            data                  : chartData0
 				        },
 				        {
 				        	label				  : routeName[1],
-				            borderColor           : "#4ACAB4",
-				            backgroundColor       : "#4ACAB4",
+				            borderColor           : "#202951",
+				            backgroundColor       : "#202951",
 				            data                  : chartData1
 				        },
 				        {
 				        	label				  : routeName[2],
-				            borderColor           : "#FFEA88",
-				            backgroundColor       : "#FFEA88",
+				            borderColor           : "#33b242",
+				            backgroundColor       : "#33b242",
 				            data                  : chartData2
 				        }
 				        
@@ -298,7 +297,7 @@
 				        var pieChartData = {
 				        labels : chartLabel,
 				        datasets : [{
-				            backgroundColor  : ["#E81574","#DDE815","#B315E8","#e9967a","#90ee90"],
+				            backgroundColor  : ["#f75821","#202951","#33b242","#b51c1c","#911bb5"],
 				            data             : chartData
 				        }]
 				    };

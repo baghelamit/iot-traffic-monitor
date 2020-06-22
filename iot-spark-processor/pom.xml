@@ -6,34 +6,65 @@
 	<version>1.0.0</version>
 	<name>IoT Spark Processor</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<dse.version>6.7.6</dse.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>DataStax-Repo</id>
+			<url>https://repo.datastax.com/public-repos/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<!-- Spark dependencies -->
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-core_2.10</artifactId>
-			<version>1.6.2</version>
+			<artifactId>spark-core_2.11</artifactId>
+			<version>2.4.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-streaming_2.10</artifactId>
-			<version>1.6.2</version>
+			<artifactId>spark-streaming_2.11</artifactId>
+			<version>2.4.3</version>
 		</dependency>
+		    <dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.11</artifactId>
+			<version>2.2.0</version>
+		    </dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-streaming-kafka_2.10</artifactId>
-			<version>1.6.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-sql_2.10</artifactId>
-			<version>1.6.2</version>
+			<artifactId>spark-sql_2.11</artifactId>
+			<version>2.4.3</version>
 		</dependency>
 		<!-- Spark cassandra -->
 		<dependency>
 			<groupId>com.datastax.spark</groupId>
-			<artifactId>spark-cassandra-connector_2.10</artifactId>
-			<version>1.6.0</version>
+			<artifactId>spark-cassandra-connector_2.11</artifactId>
+			<version>2.4.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.datastax.cassandra/cassandra-driver-mapping
+		<dependency>
+			<groupId>com.datastax.cassandra</groupId>
+			<artifactId>cassandra-driver-mapping</artifactId>
+			<version>3.7.1</version>
+		</dependency> -->
+		<!-- Spark cassandra -->
+		<dependency>
+			<groupId>com.datastax.dse</groupId>
+			<artifactId>dse-spark-dependencies</artifactId>
+			<version>${dse.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
 		<!-- other -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -56,7 +87,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>

@@ -32,8 +32,17 @@ public class IoTDataProducer {
 		//read config file
 		Properties prop = PropertyFileReader.readPropertyFile();		
 		String zookeeper = prop.getProperty("com.iot.app.kafka.zookeeper");
+		if (System.getProperty("com.iot.app.kafka.zookeeper") != null) {
+                    zookeeper = System.getProperty("com.iot.app.kafka.zookeeper");
+		}
 		String brokerList = prop.getProperty("com.iot.app.kafka.brokerlist");
+		if (System.getProperty("com.iot.app.kafka.brokerlist") != null) {
+                    brokerList  = System.getProperty("com.iot.app.kafka.brokerlist");
+		}
 		String topic = prop.getProperty("com.iot.app.kafka.topic");
+		if (System.getProperty("com.iot.app.kafka.topic") != null) {
+                    topic  = System.getProperty("com.iot.app.kafka.topic");
+		}
 		logger.info("Using Zookeeper=" + zookeeper + " ,Broker-list=" + brokerList + " and topic " + topic);
 
 		// set producer properties
@@ -60,7 +69,7 @@ public class IoTDataProducer {
 	 */
 	private void generateIoTEvent(Producer<String, IoTData> producer, String topic) throws InterruptedException {
 		List<String> routeList = Arrays.asList(new String[]{"Route-37", "Route-43", "Route-82"});
-		List<String> vehicleTypeList = Arrays.asList(new String[]{"Large Truck", "Small Truck", "Private Car", "Bus", "Taxi"});
+		List<String> vehicleTypeList = Arrays.asList(new String[]{"Large Truck", "Small Truck", "Van", "18 Wheeler", "Car"});
 		Random rand = new Random();
 		logger.info("Sending events");
 		// generate event in loop
@@ -70,22 +79,23 @@ public class IoTDataProducer {
 				String vehicleId = UUID.randomUUID().toString();
 				String vehicleType = vehicleTypeList.get(rand.nextInt(5));
 				String routeId = routeList.get(rand.nextInt(3));
-				Date timestamp = new Date();
 				double speed = rand.nextInt(100 - 20) + 20;// random speed between 20 to 100
 				double fuelLevel = rand.nextInt(40 - 10) + 10;
 				for (int j = 0; j < 5; j++) {// Add 5 events for each vehicle
 					String coords = getCoordinates(routeId);
 					String latitude = coords.substring(0, coords.indexOf(","));
 					String longitude = coords.substring(coords.indexOf(",") + 1, coords.length());
-					IoTData event = new IoTData(vehicleId, vehicleType, routeId, latitude, longitude, timestamp, speed,fuelLevel);
+					// The timestamp field is set during event submission to get different values across events.
+					IoTData event = new IoTData(vehicleId, vehicleType, routeId, latitude, longitude, null, speed, fuelLevel);
 					eventList.add(event);
 				}
 			}
 			Collections.shuffle(eventList);// shuffle for random events
 			for (IoTData event : eventList) {
+				event.setTimestamp(new Date());
 				KeyedMessage<String, IoTData> data = new KeyedMessage<String, IoTData>(topic, event);
 				producer.send(data);
-				Thread.sleep(rand.nextInt(3000 - 1000) + 1000);//random delay of 1 to 3 seconds
+				Thread.sleep(rand.nextInt(1000 - 500) + 500);//random delay of 0.5 to 1 second
 			}
 		}
 	}

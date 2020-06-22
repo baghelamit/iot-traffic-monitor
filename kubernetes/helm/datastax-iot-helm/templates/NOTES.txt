@@ -1,0 +1,11 @@
+1. Get YB IoT App Pods by running this command:
+  kubectl --namespace {{ .Release.Namespace }} get pods
+
+2. Get list of YB IoT App services that are running:
+  kubectl --namespace {{ .Release.Namespace }} get services
+
+3. Get information about the load balancer services:
+  kubectl get svc --namespace {{ .Release.Namespace }}
+
+4. Cleanup YugaByte Pods
+  helm delete {{ .Release.Name }} --purge

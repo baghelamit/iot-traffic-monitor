@@ -19,7 +19,8 @@ import org.apache.spark.streaming.api.java.JavaMapWithStateDStream;
 import org.apache.spark.streaming.api.java.JavaPairDStream;
 
 import com.datastax.spark.connector.japi.CassandraJavaUtil;
-import com.google.common.base.Optional;
+//import com.google.common.base.Optional;
+import org.apache.spark.api.java.Optional;
 import com.iot.app.spark.entity.POITrafficData;
 import com.iot.app.spark.entity.TotalTrafficData;
 import com.iot.app.spark.entity.WindowTrafficData;

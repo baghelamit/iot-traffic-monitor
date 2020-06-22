@@ -14,5 +14,5 @@ You can build and run this application using below commands. Please check resour
 
 ```sh
 mvn package
-spark-submit --class "com.iot.app.spark.processor.IoTDataProcessor” iot-spark-processor-1.0.0.jar
+dse spark-submit --packages org.apache.spark:spark-streaming-kafka_2.11:1.6.3 --class "com.iot.app.spark.processor.IoTDataProcessor" target/iot-spark-processor-1.0.0.jar
 ```
